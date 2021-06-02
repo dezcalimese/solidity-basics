@@ -1,8 +1,6 @@
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.7.6;
+pragma solidity ^0.5.12;
 
-contract Enum {
-    // Enum representing shipping status
+contract Order {
     enum Status {
         Pending,
         Shipped,
@@ -10,33 +8,27 @@ contract Enum {
         Rejected,
         Canceled
     }
-
-    // Default value is the first element listed in
-    // definition of the type, in this case "Pending"
+    
     Status public status;
-
-    // Returns uint
-    // Pending  - 0
-    // Shipped  - 1
-    // Accepted - 2
-    // Rejected - 3
-    // Canceled - 4
-    function get() public view returns (Status) {
-        return status;
+    
+    function ship() public {
+        // updating a status
+        require(status == Status.Pending);
+        status = Status.Shipped;
     }
-
-    // Update status by passing uint into input
-    function set(Status _status) public {
-        status = _status;
+    
+    function acceptDelivery() public {
+        require(status == Status.Shipped);
+        status = Status.Accepted;
     }
-
-    // You can update to a specific enum like this
+    
+    function rejectDelivery() public {
+        require(status == Status.Shipped);
+        status = Status.Rejected;
+    }
+    
     function cancel() public {
+        require(status == Status.Pending);
         status = Status.Canceled;
-    }
-
-    // delete resets the enum to it's first value, 0
-    function reset() public {
-        delete status;
     }
 }
