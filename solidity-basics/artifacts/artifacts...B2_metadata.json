@@ -36,6 +36,21 @@
 				"type": "function"
 			},
 			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_num",
+						"type": "uint256"
+					}
+				],
+				"name": "setVars",
+				"outputs": [],
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
 				"constant": true,
 				"inputs": [],
 				"name": "sender",
@@ -49,26 +64,6 @@
 				"payable": false,
 				"stateMutability": "view",
 				"type": "function"
-			},
-			{
-				"constant": false,
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_contract",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_num",
-						"type": "uint256"
-					}
-				],
-				"name": "setVars",
-				"outputs": [],
-				"payable": true,
-				"stateMutability": "payable",
-				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -80,7 +75,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Delegatecall.sol": "A"
+			"Delegatecall.sol": "B2"
 		},
 		"evmVersion": "petersburg",
 		"libraries": {},

@@ -1,0 +1,74 @@
+{
+	"compiler": {
+		"version": "0.5.11+commit.22be8592"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "bytes32[]",
+						"name": "proof",
+						"type": "bytes32[]"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "root",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "leaf",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "uint256",
+						"name": "index",
+						"type": "uint256"
+					}
+				],
+				"name": "verify",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"MerkleTree.sol": "MerkleProof"
+		},
+		"evmVersion": "petersburg",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"MerkleTree.sol": {
+			"keccak256": "0x105e8118f91f0cfe01a7452871b0bc53610ed500bd3baef2b4a3546cffd2bd66",
+			"urls": [
+				"bzz-raw://16cf35d151ed4c3c07af553f1f11ff472a5131220b439f8839eaa6fcfc0d4e74",
+				"dweb:/ipfs/QmQFdWKkLCBijGRgeuCV8hnoatAa1KJdLsDPhZfXpWRRe8"
+			]
+		}
+	},
+	"version": 1
+}

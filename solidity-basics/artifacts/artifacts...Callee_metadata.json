@@ -8,6 +8,21 @@
 			{
 				"constant": true,
 				"inputs": [],
+				"name": "x",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
 				"name": "value",
 				"outputs": [
 					{
@@ -21,9 +36,15 @@
 				"type": "function"
 			},
 			{
-				"constant": true,
-				"inputs": [],
-				"name": "num",
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_x",
+						"type": "uint256"
+					}
+				],
+				"name": "setX",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -32,40 +53,31 @@
 					}
 				],
 				"payable": false,
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"constant": true,
-				"inputs": [],
-				"name": "sender",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"payable": false,
-				"stateMutability": "view",
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"constant": false,
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "_contract",
-						"type": "address"
-					},
-					{
 						"internalType": "uint256",
-						"name": "_num",
+						"name": "_x",
 						"type": "uint256"
 					}
 				],
-				"name": "setVars",
-				"outputs": [],
+				"name": "setXAndSendEther",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
 				"payable": true,
 				"stateMutability": "payable",
 				"type": "function"
@@ -80,7 +92,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Delegatecall.sol": "A"
+			"CallingOtherContracts.sol": "Callee"
 		},
 		"evmVersion": "petersburg",
 		"libraries": {},
@@ -91,11 +103,11 @@
 		"remappings": []
 	},
 	"sources": {
-		"Delegatecall.sol": {
-			"keccak256": "0x2082c49cba8ae0a3a1f8bf1190ea252c9d2910ea92b9a0f1430c2de304a2be33",
+		"CallingOtherContracts.sol": {
+			"keccak256": "0x47356311d4c526f3576f1608220a8ceba7dd90d84bb928a30bb74f7a3a07b8ae",
 			"urls": [
-				"bzz-raw://f3f1ab844aa3badd0831d4c0beafc6a87fab8054bd3ed658610fe543ed0726e4",
-				"dweb:/ipfs/QmeKKqAhjyqvgj3pCmLQyR94PFT5S2P43DCBbAReaa2uud"
+				"bzz-raw://1617ee2ef5e5bdda7539579dde944e9b55b5a3ef168895b3f81a69a0227a3bd3",
+				"dweb:/ipfs/Qmf9yMUjKBmBPjJabm6xB4X2QSSfNeUUJmzMhaGKnfkBCp"
 			]
 		}
 	},

@@ -1,0 +1,74 @@
+{
+	"compiler": {
+		"version": "0.5.11+commit.22be8592"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "getAddress",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "addr",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"InheritancePart3.sol": "C"
+		},
+		"evmVersion": "petersburg",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"InheritancePart3.sol": {
+			"keccak256": "0xc154ea47ef6bcbb5aa9281a51283b36061dc4c3bcba2284eff52d7c4eaccff16",
+			"urls": [
+				"bzz-raw://b7513c4a8fe948949a68092cf14815ce1ed7320217ef9049d8b593f6866902c3",
+				"dweb:/ipfs/QmbGtJdsAhJo8juDNvuLfwHNQ5RsJVEhY1BtYGiEwKfZZj"
+			]
+		}
+	},
+	"version": 1
+}

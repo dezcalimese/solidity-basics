@@ -1,0 +1,71 @@
+{
+	"compiler": {
+		"version": "0.6.10+commit.00c0fcaf"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "contract TimeLock",
+						"name": "_timeLock",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "fallback"
+			},
+			{
+				"inputs": [],
+				"name": "attack",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Overflow.sol": "Attack"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Overflow.sol": {
+			"keccak256": "0x33862a1fcdd2162ba0cfc5d21e1857e29ca9767659a138f44e9794e8358abad0",
+			"urls": [
+				"bzz-raw://19b3a599cd60850c4863155dd2247088e1c0de779d39f593fe622fc6af3a4179",
+				"dweb:/ipfs/QmNyo6KW9M6vvnH5aECPwmCQExe8LbCBoBBertpbtgbKSG"
+			]
+		},
+		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v3.0.0/contracts/math/SafeMath.sol": {
+			"keccak256": "0xaa0e11a791bc975d581a4f5b7a8d9c16a880a354c89312318ae072ae3e740409",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://982d8b344f76193834260436d74c81e5a8f9e89106bb4cd72bbaabda4f3f59c2",
+				"dweb:/ipfs/QmSrvP5TkQRhKDVCTpsV3uaKLBhkt7PjUY89vdtM9o5ybK"
+			]
+		}
+	},
+	"version": 1
+}
